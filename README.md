@@ -99,6 +99,26 @@ while src.isOpened():
 * So each frame turns into a black-and-white image.
 * Think or it as simple paper-cutting-and-pasting process.
 * The selected part would be added on your background image.
+### Record the frame and check the result
+```python
+        # Show before and after
+        cv2.imshow('Before (src)', frame)
+        cv2.imshow('After (dst)', dst)
+
+        # Record the modified frame
+        recorder.write(dst)
+
+        # Repeat every 10 milliseconds
+        if cv2.waitKey(10) == 27: 
+            # Press [Esc] to stop during the process
+            # If you do that, the record would not be perfectly completed
+            # Please wait for the process itself to stop to get a full video
+            break
+
+print("Your video is ready!")
+src.release()
+cv2.destroyAllWindows()
+```
 
 
 
