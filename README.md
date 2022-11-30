@@ -48,6 +48,13 @@ print("="*60)
 
 * Print now, and check the information of the source video including FPS, width, height.
 
+### Determing the hsv color range
+```python
+hsv_lower = np.array([50, 35, 133]) 
+hsv_upper = np.array([90, 110, 235])
+```
+* We have to determine the hsv color range for distinguishing backgrounds and objects and seperate objects from backgrounds.
+
 ### Getting each frame of the video
 ```python
 while src.isOpened():
