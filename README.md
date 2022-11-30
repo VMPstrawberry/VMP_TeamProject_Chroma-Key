@@ -2,7 +2,7 @@
 **Strawberry Team = 심유림 / 정수겸 / 윤 찬**  
 **&lt;Awesome Things you can do with Chroma-Key>**
 
-Let's talk about our code !
+*Let's talk about our code !*
 
 ```python
 import numpy as np
