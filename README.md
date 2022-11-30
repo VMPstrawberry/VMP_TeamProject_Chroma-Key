@@ -47,14 +47,19 @@ print("="*60)
 ***4***
 
 * Print now, and check the information of the source video including FPS, width, height.
-
-### Determing the hsv color range
+### Determining the hsv color range
 ```python
 hsv_lower = np.array([50, 35, 133]) 
 hsv_upper = np.array([90, 110, 235])
 ```
 * We have to determine the hsv color range for distinguishing backgrounds and objects and seperate objects from backgrounds.
-
+### Making a recorder to record the result
+```python
+recorder = cv2.VideoWriter("naming for your video.mp4", cv2.VideoWriter_fourcc(*'mp4v'), src_fps, (int(src_width), int(src_height))) 
+```
+* If you have finished setting the hsv color range, you will save the result to your file.
+* First, you should name the video and save it in mp4 file format.
+* In order for this algorithm to work, the background picture to be used for the chroma key operation must be the same size as the original video, so you will use the int function to resize the backgorund picture.
 ### Getting each frame of the video
 ```python
 while src.isOpened():
