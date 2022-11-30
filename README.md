@@ -1,6 +1,6 @@
 # VMP_TeamProject_Chroma-Key
 **Strawberry Team = 심유림 / 정수겸 / 윤 찬**  
-**&lt;Awesome Things you can do with Chroma-Key>**
+**&lt;3 Awesome Things you can do with Chroma-Key>**
 
 *Let's talk about our code !*
 
