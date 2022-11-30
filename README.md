@@ -12,7 +12,7 @@ Let's talk about our code !
 
 ***5-6***
 
-* And then, Upload the source video and a new background image by using cv2.VideoCapture() and cv2.imread() respectively.
+* And then, upload the source video and a new background image by using cv2.VideoCapture() and cv2.imread() respectively.
 
 * You have to use a new background image that is the same size as the frame in the original video.
 
