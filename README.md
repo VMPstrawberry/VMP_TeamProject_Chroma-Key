@@ -81,7 +81,7 @@ while src.isOpened():
         # Cutting and pasting
         dst[pixel_values == 0] = frame[pixel_values == 0]
 ```
-* By **cv2.inRange()**, you can change the pixels as below:
+* By **cv2.inRange()**, you can change the pixel values as below:
     * chosen pixels --> 225 (WHITE)
     * unchosen pixels --> 0 (BLACK)
 * So each frame turns into a black-and-white image.
